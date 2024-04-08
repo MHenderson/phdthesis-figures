@@ -1,0 +1,71 @@
+\ifx\XFigwidth\undefined\dimen1=0pt\else\dimen1\XFigwidth\fi
+\divide\dimen1 by 3001
+\ifx\XFigheight\undefined\dimen3=0pt\else\dimen3\XFigheight\fi
+\divide\dimen3 by 2880
+\ifdim\dimen1=0pt\ifdim\dimen3=0pt\dimen1=4143sp\dimen3\dimen1
+  \else\dimen1\dimen3\fi\else\ifdim\dimen3=0pt\dimen3\dimen1\fi\fi
+\tikzpicture[x=+\dimen1, y=+\dimen3]
+{\ifx\XFigu\undefined\catcode`\@11
+\def\temp{\alloc@1\dimen\dimendef\insc@unt}\temp\XFigu\catcode`\@12\fi}
+\XFigu4143sp
+% Uncomment to scale line thicknesses with the same
+% factor as width of the drawing.
+%\pgfextractx\XFigu{\pgfqpointxy{1}{1}}
+\ifdim\XFigu<0pt\XFigu-\XFigu\fi
+\clip(3945,-6045) rectangle (6946,-3165);
+\tikzset{inner sep=+0pt, outer sep=+0pt}
+\pgfsetlinewidth{+7.5\XFigu}
+\filldraw  (4320,-3240) circle [radius=+45];
+\filldraw  (4320,-3780) circle [radius=+45];
+\filldraw  (4320,-4320) circle [radius=+45];
+\filldraw  (4320,-4860) circle [radius=+45];
+\filldraw  (4320,-5400) circle [radius=+45];
+\filldraw  (4320,-5940) circle [radius=+45];
+\filldraw  (6300,-3240) circle [radius=+45];
+\filldraw  (6300,-3690) circle [radius=+45];
+\filldraw  (6300,-4140) circle [radius=+45];
+\filldraw  (6300,-4590) circle [radius=+45];
+\filldraw  (6300,-5040) circle [radius=+45];
+\filldraw  (6300,-5490) circle [radius=+45];
+\filldraw  (6300,-5940) circle [radius=+45];
+\pgfsetlinewidth{+15\XFigu}
+\draw (4320,-3240)--(6300,-5490);
+\draw (4320,-3240)--(6300,-5940);
+\draw (4320,-3780)--(6300,-3690);
+\draw (4320,-3780)--(6300,-5040);
+\draw (4320,-4860)--(6300,-3690);
+\draw (4320,-4860)--(6300,-5940);
+\draw (4320,-5400)--(6300,-5040);
+\draw (4320,-5940)--(6300,-5490);
+\pgfsetdash{{+90\XFigu}{+90\XFigu}}{++0pt}
+\draw (4320,-5940)--(6300,-3240);
+\draw (6300,-3240)--(4320,-4320);
+\draw (4320,-4320)--(6300,-4140);
+\draw (6300,-4140)--(4320,-5400);
+\pgftext[base,left,at=\pgfqpointxy{3960}{-3270}] {\fontsize{11}{13.2}\usefont{T1}{ptm}{m}{n}v}
+\pgftext[base,left,at=\pgfqpointxy{4050}{-3330}] {\fontsize{9}{10.8}\usefont{T1}{ptm}{m}{n}1}
+\pgftext[base,left,at=\pgfqpointxy{3960}{-3810}] {\fontsize{11}{13.2}\usefont{T1}{ptm}{m}{n}v}
+\pgftext[base,left,at=\pgfqpointxy{4050}{-3870}] {\fontsize{9}{10.8}\usefont{T1}{ptm}{m}{n}2}
+\pgftext[base,left,at=\pgfqpointxy{3960}{-4350}] {\fontsize{11}{13.2}\usefont{T1}{ptm}{m}{n}v}
+\pgftext[base,left,at=\pgfqpointxy{4050}{-4410}] {\fontsize{9}{10.8}\usefont{T1}{ptm}{m}{n}3}
+\pgftext[base,left,at=\pgfqpointxy{3960}{-4890}] {\fontsize{11}{13.2}\usefont{T1}{ptm}{m}{n}v}
+\pgftext[base,left,at=\pgfqpointxy{4050}{-4950}] {\fontsize{9}{10.8}\usefont{T1}{ptm}{m}{n}4}
+\pgftext[base,left,at=\pgfqpointxy{3960}{-5430}] {\fontsize{11}{13.2}\usefont{T1}{ptm}{m}{n}v}
+\pgftext[base,left,at=\pgfqpointxy{4050}{-5490}] {\fontsize{9}{10.8}\usefont{T1}{ptm}{m}{n}5}
+\pgftext[base,left,at=\pgfqpointxy{3960}{-5970}] {\fontsize{11}{13.2}\usefont{T1}{ptm}{m}{n}v}
+\pgftext[base,left,at=\pgfqpointxy{4050}{-6030}] {\fontsize{9}{10.8}\usefont{T1}{ptm}{m}{n}6}
+\pgftext[base,left,at=\pgfqpointxy{6750}{-4620}] {\fontsize{11}{13.2}\usefont{T1}{ptm}{m}{n}c}
+\pgftext[base,left,at=\pgfqpointxy{6840}{-4680}] {\fontsize{9}{10.8}\usefont{T1}{ptm}{m}{n}4}
+\pgftext[base,left,at=\pgfqpointxy{6750}{-4170}] {\fontsize{11}{13.2}\usefont{T1}{ptm}{m}{n}c}
+\pgftext[base,left,at=\pgfqpointxy{6840}{-4230}] {\fontsize{9}{10.8}\usefont{T1}{ptm}{m}{n}3}
+\pgftext[base,left,at=\pgfqpointxy{6765}{-3720}] {\fontsize{11}{13.2}\usefont{T1}{ptm}{m}{n}c}
+\pgftext[base,left,at=\pgfqpointxy{6855}{-3780}] {\fontsize{9}{10.8}\usefont{T1}{ptm}{m}{n}2}
+\pgftext[base,left,at=\pgfqpointxy{6765}{-3270}] {\fontsize{11}{13.2}\usefont{T1}{ptm}{m}{n}c}
+\pgftext[base,left,at=\pgfqpointxy{6855}{-3330}] {\fontsize{9}{10.8}\usefont{T1}{ptm}{m}{n}1}
+\pgftext[base,left,at=\pgfqpointxy{6765}{-5070}] {\fontsize{11}{13.2}\usefont{T1}{ptm}{m}{n}c}
+\pgftext[base,left,at=\pgfqpointxy{6855}{-5130}] {\fontsize{9}{10.8}\usefont{T1}{ptm}{m}{n}5}
+\pgftext[base,left,at=\pgfqpointxy{6765}{-5520}] {\fontsize{11}{13.2}\usefont{T1}{ptm}{m}{n}c}
+\pgftext[base,left,at=\pgfqpointxy{6855}{-5580}] {\fontsize{9}{10.8}\usefont{T1}{ptm}{m}{n}6}
+\pgftext[base,left,at=\pgfqpointxy{6765}{-5970}] {\fontsize{11}{13.2}\usefont{T1}{ptm}{m}{n}c}
+\pgftext[base,left,at=\pgfqpointxy{6855}{-6030}] {\fontsize{9}{10.8}\usefont{T1}{ptm}{m}{n}7}
+\endtikzpicture%

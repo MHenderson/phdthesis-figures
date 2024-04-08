@@ -1,0 +1,32 @@
+\ifx\XFigwidth\undefined\dimen1=0pt\else\dimen1\XFigwidth\fi
+\divide\dimen1 by 3200
+\ifx\XFigheight\undefined\dimen3=0pt\else\dimen3\XFigheight\fi
+\divide\dimen3 by 1750
+\ifdim\dimen1=0pt\ifdim\dimen3=0pt\dimen1=4143sp\dimen3\dimen1
+  \else\dimen1\dimen3\fi\else\ifdim\dimen3=0pt\dimen3\dimen1\fi\fi
+\tikzpicture[x=+\dimen1, y=+\dimen3]
+{\ifx\XFigu\undefined\catcode`\@11
+\def\temp{\alloc@1\dimen\dimendef\insc@unt}\temp\XFigu\catcode`\@12\fi}
+\XFigu4143sp
+% Uncomment to scale line thicknesses with the same
+% factor as width of the drawing.
+%\pgfextractx\XFigu{\pgfqpointxy{1}{1}}
+\ifdim\XFigu<0pt\XFigu-\XFigu\fi
+\clip(4098,-5344) rectangle (7298,-3594);
+\tikzset{inner sep=+0pt, outer sep=+0pt}
+\pgfsetlinewidth{+7.5\XFigu}
+\filldraw  (5940,-5130) circle [radius=+40];
+\filldraw  (4320,-5130) circle [radius=+40];
+\filldraw  (5130,-3870) circle [radius=+40];
+\draw  (5130,-3735) ellipse [x radius=+135,y radius=+90,rotate=+270];
+\draw  (4221,-5223) ellipse [x radius=+135,y radius=+90,rotate=+225];
+\draw  (6050,-5216) ellipse [x radius=+135,y radius=+90,rotate=+135];
+\draw (4320,-5130)--(5940,-5130);
+\draw (4320,-5130)--(5130,-3870);
+\draw (5130,-3870)--(5940,-5130);
+\filldraw  (6570,-3960) circle [radius=+40];
+\filldraw  (6570,-4950) circle [radius=+40];
+\draw (6570,-3960)--(6570,-4950);
+\draw  (7200,-4275) ellipse [x radius=+135,y radius=+90,rotate=+270];
+\filldraw  (7200,-4410) circle [radius=+40];
+\endtikzpicture%

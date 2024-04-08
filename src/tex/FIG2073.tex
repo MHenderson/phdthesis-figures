@@ -1,0 +1,54 @@
+\ifx\XFigwidth\undefined\dimen1=0pt\else\dimen1\XFigwidth\fi
+\divide\dimen1 by 2976
+\ifx\XFigheight\undefined\dimen3=0pt\else\dimen3\XFigheight\fi
+\divide\dimen3 by 3752
+\ifdim\dimen1=0pt\ifdim\dimen3=0pt\dimen1=4143sp\dimen3\dimen1
+  \else\dimen1\dimen3\fi\else\ifdim\dimen3=0pt\dimen3\dimen1\fi\fi
+\tikzpicture[x=+\dimen1, y=+\dimen3]
+{\ifx\XFigu\undefined\catcode`\@11
+\def\temp{\alloc@1\dimen\dimendef\insc@unt}\temp\XFigu\catcode`\@12\fi}
+\XFigu4143sp
+% Uncomment to scale line thicknesses with the same
+% factor as width of the drawing.
+%\pgfextractx\XFigu{\pgfqpointxy{1}{1}}
+\ifdim\XFigu<0pt\XFigu-\XFigu\fi
+\clip(4272,-9645) rectangle (7248,-5893);
+\tikzset{inner sep=+0pt, outer sep=+0pt}
+\pgfsetlinewidth{+7.5\XFigu}
+\filldraw  (6570,-6840) circle [radius=+40];
+\filldraw  (6570,-6120) circle [radius=+40];
+\draw (6570,-6120)--(6570,-6840);
+\filldraw  (7200,-6840) circle [radius=+40];
+\filldraw  (7200,-6120) circle [radius=+40];
+\draw (7200,-6120)--(7200,-6840);
+\filldraw  (5940,-7200) circle [radius=+40];
+\filldraw  (4320,-7200) circle [radius=+40];
+\filldraw  (5130,-5940) circle [radius=+40];
+\draw (4320,-7200)--(5940,-7200);
+\draw (4320,-7200)--(5130,-5940);
+\draw (5130,-5940)--(5940,-7200);
+\filldraw  (6570,-8910) circle [radius=+40];
+\filldraw  (6570,-8190) circle [radius=+40];
+\draw (6570,-8190)--(6570,-8910);
+\filldraw  (7200,-8910) circle [radius=+40];
+\filldraw  (7200,-8190) circle [radius=+40];
+\draw (7200,-8190)--(7200,-8910);
+\filldraw  (5952,-9575) circle [radius=+9];
+\filldraw  (5940,-9270) circle [radius=+40];
+\filldraw  (4320,-9270) circle [radius=+40];
+\filldraw  (5130,-8010) circle [radius=+40];
+\draw (5940,-9270)--(6570,-8910);
+\draw (5940,-9270)--(6570,-8190);
+\draw (4320,-9270)--(6570,-8910);
+\draw (4320,-9270)--(6570,-8190);
+\draw (5130,-8010)--(6570,-8190);
+\draw (5130,-8010)--(6570,-8910);
+\draw (4320,-9270)--(5940,-9270);
+\draw (4320,-9270)--(5130,-8010);
+\draw (5130,-8010)--(5940,-9270);
+\pgftext[base,left,at=\pgfqpointxy{6660}{-6480}] {\fontsize{12}{14.4}\usefont{U}{psy}{m}{n}e}
+\pgftext[base,left,at=\pgfqpointxy{5760}{-9630}] {\fontsize{12}{14.4}\normalfont H}
+\pgftext[base,left,at=\pgfqpointxy{6030}{-9630}] {\fontsize{12}{14.4}\usefont{U}{psy}{m}{n}e}
+\pgftext[base,left,at=\pgfqpointxy{6660}{-8550}] {\fontsize{12}{14.4}\usefont{U}{psy}{m}{n}e}
+\pgftext[base,left,at=\pgfqpointxy{5850}{-7650}] {\fontsize{12}{14.4}\normalfont H}
+\endtikzpicture%

@@ -1,0 +1,99 @@
+\ifx\XFigwidth\undefined\dimen1=0pt\else\dimen1\XFigwidth\fi
+\divide\dimen1 by 4993
+\ifx\XFigheight\undefined\dimen3=0pt\else\dimen3\XFigheight\fi
+\divide\dimen3 by 1815
+\ifdim\dimen1=0pt\ifdim\dimen3=0pt\dimen1=4143sp\dimen3\dimen1
+  \else\dimen1\dimen3\fi\else\ifdim\dimen3=0pt\dimen3\dimen1\fi\fi
+\tikzpicture[x=+\dimen1, y=+\dimen3]
+{\ifx\XFigu\undefined\catcode`\@11
+\def\temp{\alloc@1\dimen\dimendef\insc@unt}\temp\XFigu\catcode`\@12\fi}
+\XFigu4143sp
+% Uncomment to scale line thicknesses with the same
+% factor as width of the drawing.
+%\pgfextractx\XFigu{\pgfqpointxy{1}{1}}
+\ifdim\XFigu<0pt\XFigu-\XFigu\fi
+\pgfdeclarearrow{
+  name = xfiga2,
+  parameters = {
+    \the\pgfarrowlinewidth \the\pgfarrowlength \the\pgfarrowwidth\ifpgfarrowopen o\fi},
+  defaults = {
+	  line width=+7.5\XFigu, length=+120\XFigu, width=+60\XFigu},
+  setup code = {
+    % miter protrusion = thk * sqrt(wd^2 + (tipmv*len)^2) / (2 * wd)
+    \dimen7 2.6\pgfarrowlength\pgfmathveclen{\the\dimen7}{\the\pgfarrowwidth}
+    \dimen7 2\pgfarrowwidth\pgfmathdivide{\pgfmathresult}{\the\dimen7}
+    \dimen7 \pgfmathresult\pgfarrowlinewidth
+    \pgfarrowssettipend{+\dimen7}
+    \pgfarrowssetbackend{+-1.25\pgfarrowlength}
+    \dimen9 -\pgfarrowlength\advance\dimen9 by-0.5\pgfarrowlinewidth
+    \pgfarrowssetlineend{+\dimen9}
+    \dimen9 -\pgfarrowlength\advance\dimen9 by-0.5\pgfarrowlinewidth
+    \pgfarrowssetvisualbackend{+\dimen9}
+    \pgfarrowshullpoint{+\dimen7}{+0pt}
+    \pgfarrowsupperhullpoint{+-1.25\pgfarrowlength}{+0.5\pgfarrowwidth}
+    \pgfarrowssavethe\pgfarrowlinewidth
+    \pgfarrowssavethe\pgfarrowlength
+    \pgfarrowssavethe\pgfarrowwidth
+  },
+  drawing code = {\pgfsetdash{}{+0pt}
+    \ifdim\pgfarrowlinewidth=\pgflinewidth\else\pgfsetlinewidth{+\pgfarrowlinewidth}\fi
+    \pgfpathmoveto{\pgfqpoint{-1.25\pgfarrowlength}{-0.5\pgfarrowwidth}}
+    \pgfpathlineto{\pgfqpoint{0pt}{0pt}}
+    \pgfpathlineto{\pgfqpoint{-1.25\pgfarrowlength}{0.5\pgfarrowwidth}}
+    \pgfpathlineto{\pgfqpoint{-\pgfarrowlength}{0pt}}
+    \pgfpathclose
+    \ifpgfarrowopen\pgfusepathqstroke\else\pgfsetfillcolor{.}
+	\ifdim\pgfarrowlinewidth>0pt\pgfusepathqfillstroke\else\pgfusepathqfill\fi\fi
+  }
+}
+\clip(4098,-5385) rectangle (9091,-3570);
+\tikzset{inner sep=+0pt, outer sep=+0pt}
+\pgfsetlinewidth{+7.5\XFigu}
+\filldraw  (5940,-5130) circle [radius=+40];
+\filldraw  (4320,-5130) circle [radius=+40];
+\filldraw  (5130,-3870) circle [radius=+40];
+\draw  (5130,-3735) ellipse [x radius=+135,y radius=+90,rotate=+270];
+\pgfsetroundcap
+\pgfsetdash{{+15\XFigu}{+45\XFigu}}{+15\XFigu}
+\draw  (4221,-5223) ellipse [x radius=+135,y radius=+90,rotate=+225];
+\pgfsetdash{{+60\XFigu}{+60\XFigu}}{++0pt}
+\draw  (6050,-5216) ellipse [x radius=+135,y radius=+90,rotate=+135];
+\pgfsetdash{}{+0pt}
+\filldraw  (7380,-5130) circle [radius=+40];
+\filldraw  (7380,-3780) circle [radius=+40];
+\filldraw  (8820,-3780) circle [radius=+40];
+\filldraw  (8820,-5130) circle [radius=+40];
+\pgfsetbuttcap
+\draw (4320,-5130)--(5940,-5130);
+\pgfsetdash{{+60\XFigu}{+60\XFigu}}{++0pt}
+\draw (4320,-5130)--(5130,-3870);
+\pgfsetdash{{+15\XFigu}{+60\XFigu}}{+15\XFigu}
+\draw (5130,-3870)--(5940,-5130);
+\pgfsetdash{}{+0pt}
+\draw (7380,-3780)--(8820,-3780);
+\draw (7380,-5130)--(8820,-5130);
+\pgfsetdash{{+60\XFigu}{+60\XFigu}}{++0pt}
+\draw (7380,-5130)--(8820,-3780);
+\draw (7380,-3780)--(8820,-5130);
+\pgfsetdash{{+15\XFigu}{+45\XFigu}}{+15\XFigu}
+\draw (7380,-5130)--(7380,-3780);
+\draw (8820,-3780)--(8820,-5130);
+\pgfsetdash{}{+0pt}
+\pgfsetarrows{[line width=7.5\XFigu, open]}
+\pgfsetarrows{xfiga2-xfiga2}
+\draw (6300,-4410)--(6840,-4410);
+\pgftext[base,left,at=\pgfqpointxy{5940}{-4950}] {\fontsize{12}{14.4}\usefont{T1}{ptm}{m}{n}v}
+\pgftext[base,left,at=\pgfqpointxy{6030}{-5010}] {\fontsize{9}{10.8}\usefont{T1}{ptm}{m}{n}2}
+\pgftext[base,left,at=\pgfqpointxy{4140}{-4950}] {\fontsize{12}{14.4}\usefont{T1}{ptm}{m}{n}v}
+\pgftext[base,left,at=\pgfqpointxy{4230}{-5010}] {\fontsize{9}{10.8}\usefont{T1}{ptm}{m}{n}3}
+\pgftext[base,left,at=\pgfqpointxy{5310}{-3960}] {\fontsize{12}{14.4}\usefont{T1}{ptm}{m}{n}v}
+\pgftext[base,left,at=\pgfqpointxy{5400}{-4020}] {\fontsize{9}{10.8}\usefont{T1}{ptm}{m}{n}1}
+\pgftext[base,left,at=\pgfqpointxy{8910}{-3690}] {\fontsize{12}{14.4}\usefont{T1}{ptm}{m}{n}v}
+\pgftext[base,left,at=\pgfqpointxy{9000}{-3750}] {\fontsize{9}{10.8}\usefont{T1}{ptm}{m}{n}1}
+\pgftext[base,left,at=\pgfqpointxy{8910}{-5310}] {\fontsize{12}{14.4}\usefont{T1}{ptm}{m}{n}v}
+\pgftext[base,left,at=\pgfqpointxy{9000}{-5370}] {\fontsize{9}{10.8}\usefont{T1}{ptm}{m}{n}2}
+\pgftext[base,left,at=\pgfqpointxy{7200}{-5310}] {\fontsize{12}{14.4}\usefont{T1}{ptm}{m}{n}v}
+\pgftext[base,left,at=\pgfqpointxy{7290}{-5370}] {\fontsize{9}{10.8}\usefont{T1}{ptm}{m}{n}3}
+\pgftext[base,left,at=\pgfqpointxy{7110}{-3690}] {\fontsize{12}{14.4}\usefont{T1}{ptm}{m}{n}v}
+\pgftext[base,left,at=\pgfqpointxy{7200}{-3750}] {\fontsize{9}{10.8}\usefont{U}{psy}{m}{n}l}
+\endtikzpicture%

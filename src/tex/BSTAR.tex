@@ -1,0 +1,54 @@
+\ifx\XFigwidth\undefined\dimen1=0pt\else\dimen1\XFigwidth\fi
+\divide\dimen1 by 3062
+\ifx\XFigheight\undefined\dimen3=0pt\else\dimen3\XFigheight\fi
+\divide\dimen3 by 4056
+\ifdim\dimen1=0pt\ifdim\dimen3=0pt\dimen1=4143sp\dimen3\dimen1
+  \else\dimen1\dimen3\fi\else\ifdim\dimen3=0pt\dimen3\dimen1\fi\fi
+\tikzpicture[x=+\dimen1, y=+\dimen3]
+{\ifx\XFigu\undefined\catcode`\@11
+\def\temp{\alloc@1\dimen\dimendef\insc@unt}\temp\XFigu\catcode`\@12\fi}
+\XFigu4143sp
+% Uncomment to scale line thicknesses with the same
+% factor as width of the drawing.
+%\pgfextractx\XFigu{\pgfqpointxy{1}{1}}
+\ifdim\XFigu<0pt\XFigu-\XFigu\fi
+\clip(4710,-8025) rectangle (7772,-3969);
+\tikzset{inner sep=+0pt, outer sep=+0pt}
+\pgfsetlinewidth{+15\XFigu}
+\filldraw  (7470,-6840) circle [radius=+36];
+\filldraw  (7470,-6300) circle [radius=+36];
+\filldraw  (7470,-4680) circle [radius=+36];
+\filldraw  (7470,-7920) circle [radius=+36];
+\filldraw  (5040,-6660) circle [radius=+36];
+\filldraw  (5040,-7920) circle [radius=+36];
+\filldraw  (5040,-4140) circle [radius=+36];
+\filldraw  (5040,-5400) circle [radius=+36];
+\filldraw  (7470,-7380) circle [radius=+36];
+\filldraw  (7470,-5760) circle [radius=+36];
+\filldraw  (7470,-5220) circle [radius=+36];
+\filldraw  (7470,-4140) circle [radius=+36];
+\draw (5040,-4140)--(7470,-4680);
+\draw (5040,-4140)--(7470,-7920);
+\draw (5040,-5400)--(7470,-6840);
+\draw (5040,-5400)--(7470,-7920);
+\draw (5040,-6660)--(7470,-6300);
+\draw (5040,-7920)--(7470,-6300);
+\draw (5040,-7920)--(7470,-7380);
+\draw (5040,-6660)--(7470,-7380);
+\pgftext[base,left,at=\pgfqpointxy{4725}{-4140}] {\fontsize{14}{16.8}\usefont{U}{psy}{m}{n}r}
+\pgftext[base,left,at=\pgfqpointxy{4837}{-4230}] {\fontsize{10}{12}\usefont{U}{psy}{m}{n}1}
+\pgftext[base,left,at=\pgfqpointxy{4725}{-5400}] {\fontsize{14}{16.8}\usefont{U}{psy}{m}{n}r}
+\pgftext[base,left,at=\pgfqpointxy{4837}{-5490}] {\fontsize{10}{12}\usefont{U}{psy}{m}{n}2}
+\pgftext[base,left,at=\pgfqpointxy{4725}{-6660}] {\fontsize{14}{16.8}\usefont{U}{psy}{m}{n}r}
+\pgftext[base,left,at=\pgfqpointxy{4837}{-6750}] {\fontsize{10}{12}\usefont{U}{psy}{m}{n}3}
+\pgftext[base,left,at=\pgfqpointxy{4725}{-7920}] {\fontsize{14}{16.8}\usefont{U}{psy}{m}{n}r}
+\pgftext[base,left,at=\pgfqpointxy{4837}{-8010}] {\fontsize{10}{12}\usefont{U}{psy}{m}{n}4}
+\pgftext[base,left,at=\pgfqpointxy{7650}{-4140}] {\fontsize{12}{14.4}\normalfont 1}
+\pgftext[base,left,at=\pgfqpointxy{7650}{-4680}] {\fontsize{12}{14.4}\normalfont 2}
+\pgftext[base,left,at=\pgfqpointxy{7650}{-5220}] {\fontsize{12}{14.4}\normalfont 3}
+\pgftext[base,left,at=\pgfqpointxy{7650}{-5760}] {\fontsize{12}{14.4}\normalfont 4}
+\pgftext[base,left,at=\pgfqpointxy{7650}{-6300}] {\fontsize{12}{14.4}\normalfont 5}
+\pgftext[base,left,at=\pgfqpointxy{7650}{-6840}] {\fontsize{12}{14.4}\normalfont 6}
+\pgftext[base,left,at=\pgfqpointxy{7650}{-7380}] {\fontsize{12}{14.4}\normalfont 7}
+\pgftext[base,left,at=\pgfqpointxy{7650}{-7920}] {\fontsize{12}{14.4}\normalfont 8}
+\endtikzpicture%
