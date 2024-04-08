@@ -1,0 +1,44 @@
+\ifx\XFigwidth\undefined\dimen1=0pt\else\dimen1\XFigwidth\fi
+\divide\dimen1 by 3076
+\ifx\XFigheight\undefined\dimen3=0pt\else\dimen3\XFigheight\fi
+\divide\dimen3 by 1546
+\ifdim\dimen1=0pt\ifdim\dimen3=0pt\dimen1=4143sp\dimen3\dimen1
+  \else\dimen1\dimen3\fi\else\ifdim\dimen3=0pt\dimen3\dimen1\fi\fi
+\tikzpicture[x=+\dimen1, y=+\dimen3]
+{\ifx\XFigu\undefined\catcode`\@11
+\def\temp{\alloc@1\dimen\dimendef\insc@unt}\temp\XFigu\catcode`\@12\fi}
+\XFigu4143sp
+% Uncomment to scale line thicknesses with the same
+% factor as width of the drawing.
+%\pgfextractx\XFigu{\pgfqpointxy{1}{1}}
+\ifdim\XFigu<0pt\XFigu-\XFigu\fi
+\clip(4087,-5273) rectangle (7163,-3727);
+\tikzset{inner sep=+0pt, outer sep=+0pt}
+\pgfsetlinewidth{+7.5\XFigu}
+\filldraw  (4140,-5220) circle [radius=+45];
+\filldraw  (4140,-3780) circle [radius=+45];
+\filldraw  (7110,-3780) circle [radius=+45];
+\pgfsetroundcap
+\pgfsetdash{{+60\XFigu}{+60\XFigu}}{++0pt}
+\filldraw  (7110,-5220) circle [radius=+45];
+\pgfsetdash{}{+0pt}
+\filldraw  (5670,-3780) circle [radius=+45];
+\filldraw  (5670,-5220) circle [radius=+45];
+\filldraw  (6390,-3780) circle [radius=+45];
+\filldraw  (6390,-5220) circle [radius=+45];
+\pgfsetbuttcap
+\draw (4140,-5220)--(5670,-5220);
+\pgfsetdash{{+45\XFigu}{+20\XFigu}{+15\XFigu}{+15\XFigu}{+15\XFigu}{+20\XFigu}}{+0pt}
+\draw (5670,-5220)--(4140,-3780);
+\pgfsetdash{}{+0pt}
+\draw (4140,-3780)--(5670,-3780);
+\pgfsetdash{{+45\XFigu}{+23\XFigu}{+15\XFigu}{+23\XFigu}}{+0pt}
+\draw (5670,-3780)--(4140,-5220);
+\pgfsetdash{{+15\XFigu}{+45\XFigu}}{+15\XFigu}
+\draw (5670,-3780)--(5670,-5220);
+\pgfsetdash{}{+0pt}
+\draw (6390,-3780)--(6390,-5220);
+\pgfsetdash{{+60\XFigu}{+60\XFigu}}{++0pt}
+\draw (7110,-3780)--(7110,-5220);
+\draw (4140,-5220)--(4140,-3780);
+\endtikzpicture%

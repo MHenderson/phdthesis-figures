@@ -1,0 +1,43 @@
+\ifx\XFigwidth\undefined\dimen1=0pt\else\dimen1\XFigwidth\fi
+\divide\dimen1 by 3266
+\ifx\XFigheight\undefined\dimen3=0pt\else\dimen3\XFigheight\fi
+\divide\dimen3 by 2975
+\ifdim\dimen1=0pt\ifdim\dimen3=0pt\dimen1=4143sp\dimen3\dimen1
+  \else\dimen1\dimen3\fi\else\ifdim\dimen3=0pt\dimen3\dimen1\fi\fi
+\tikzpicture[x=+\dimen1, y=+\dimen3]
+{\ifx\XFigu\undefined\catcode`\@11
+\def\temp{\alloc@1\dimen\dimendef\insc@unt}\temp\XFigu\catcode`\@12\fi}
+\XFigu4143sp
+% Uncomment to scale line thicknesses with the same
+% factor as width of the drawing.
+%\pgfextractx\XFigu{\pgfqpointxy{1}{1}}
+\ifdim\XFigu<0pt\XFigu-\XFigu\fi
+\clip(2665,-7170) rectangle (5931,-4195);
+\tikzset{inner sep=+0pt, outer sep=+0pt}
+\pgfsetlinewidth{+7.5\XFigu}
+\filldraw  (4320,-4320) circle [radius=+40];
+\filldraw  (5670,-5310) circle [radius=+40];
+\filldraw  (2970,-5310) circle [radius=+40];
+\filldraw  (3420,-6930) circle [radius=+40];
+\filldraw  (5220,-6930) circle [radius=+40];
+\pgfsetlinewidth{+15\XFigu}
+\draw (2970,-5310)--(5220,-6930);
+\pgfsetdash{{+60\XFigu}{+60\XFigu}}{++0pt}
+\draw (3420,-6930)--(5670,-5310);
+\pgfsetdash{{+15\XFigu}{+45\XFigu}}{+15\XFigu}
+\draw (3420,-6930)--(4320,-4320);
+\pgfsetdash{{+60\XFigu}{+30\XFigu}{+15\XFigu}{+30\XFigu}}{+0pt}
+\draw (2970,-5310)--(5670,-5310);
+\pgfsetdash{{+60\XFigu}{+27\XFigu}{+15\XFigu}{+20\XFigu}{+15\XFigu}{+27\XFigu}}{+0pt}
+\draw (5220,-6930)--(4320,-4320);
+\pgftext[base,left,at=\pgfqpointxy{2680}{-5395}] {\fontsize{12}{14.4}\usefont{T1}{ptm}{m}{n}v}
+\pgftext[base,left,at=\pgfqpointxy{2760}{-5445}] {\fontsize{10}{12}\usefont{T1}{ptm}{m}{n}5}
+\pgftext[base,left,at=\pgfqpointxy{3195}{-7105}] {\fontsize{12}{14.4}\usefont{T1}{ptm}{m}{n}v}
+\pgftext[base,left,at=\pgfqpointxy{3275}{-7155}] {\fontsize{10}{12}\usefont{T1}{ptm}{m}{n}4}
+\pgftext[base,left,at=\pgfqpointxy{5290}{-7105}] {\fontsize{12}{14.4}\usefont{T1}{ptm}{m}{n}v}
+\pgftext[base,left,at=\pgfqpointxy{5370}{-7155}] {\fontsize{10}{12}\usefont{T1}{ptm}{m}{n}3}
+\pgftext[base,left,at=\pgfqpointxy{5760}{-5350}] {\fontsize{12}{14.4}\usefont{T1}{ptm}{m}{n}v}
+\pgftext[base,left,at=\pgfqpointxy{5840}{-5400}] {\fontsize{10}{12}\usefont{T1}{ptm}{m}{n}2}
+\pgftext[base,left,at=\pgfqpointxy{4410}{-4315}] {\fontsize{12}{14.4}\usefont{T1}{ptm}{m}{n}v}
+\pgftext[base,left,at=\pgfqpointxy{4490}{-4365}] {\fontsize{10}{12}\usefont{T1}{ptm}{m}{n}1}
+\endtikzpicture%
