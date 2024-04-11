@@ -1,6 +1,6 @@
 PROJECT = phdthesis-figures
 SUBFOLDER = Graph\ Theory/Embedding
-VERSION = 0.0.0
+VERSION = 0.1.0
 
 RELEASE_INPUT = src/$(PROJECT).tex src/*.tex
 RELEASE_OUTDIR = ${RELEASE_BUILD_FOLDER}/$(SUBFOLDER)
