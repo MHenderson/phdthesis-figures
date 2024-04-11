@@ -10,6 +10,9 @@ DRAFT_INPUT = src/$(PROJECT)-draft.tex src/*.tex
 DRAFT_OUTDIR = ${DRAFT_BUILD_FOLDER}/$(SUBFOLDER)
 DRAFT_OUTPUT = $(DRAFT_OUTDIR)/$(PROJECT)-draft.pdf
 
+FIGS = $(wildcard src/fig/*.fig)
+TIKZ_FIGS = $(patsubst src/fig/%.fig,src/tex/%.tex,$(FIGS))
+
 .PHONY: all draft pdf watch clean
 
 all: draft
@@ -20,6 +23,8 @@ pdf: $(RELEASE_OUTPUT)
 
 clean: $(DRAFT_INPUT)
 	latexmk -c -cd -outdir=$(DRAFT_OUTDIR) -xelatex $<
+
+tikz: $(TIKZ_FIGS)
 
 $(RELEASE_OUTPUT): $(RELEASE_INPUT)
 	latexmk -cd -outdir=$(RELEASE_OUTDIR) -jobname=%A-v$(VERSION) -xelatex $<;
@@ -38,3 +43,6 @@ hooks:
 
 count:
 	wc src/main/*.tex > wc.txt
+
+src/tex/%.tex : src/fig/%.fig
+	fig2dev -L tikz $< > $@
